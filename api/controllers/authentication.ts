@@ -10,7 +10,6 @@ import { sendMail } from "../utils/sendmail";
 const welcome = (req:Request,res:Response) => {
     res.send("welcome");
 };
-
 const login = asyncHandler(async(req:Request<never,never,{email:string,password:string},never>,res:Response) => {
     const { email , password } = req.body;
     const user = await userModel.findOne({email});

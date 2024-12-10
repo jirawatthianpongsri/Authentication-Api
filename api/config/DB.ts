@@ -3,7 +3,6 @@ import dotenv from 'dotenv';
 
 dotenv.config({path:"../../.env"});
 
-
 const ConnectDatabase = () => {
     mongoose.connect(process.env.DB_URL as string)
         .then(()=>{

@@ -7,7 +7,6 @@ import jwt, { JwtPayload } from 'jsonwebtoken';
 import { config } from "dotenv";
 
 config({path:"../../.env"});
-
 const getUser = asyncHandler(async(req:Request, res:Response)=>{
     const userId = req.params.id;
     const user = await userModel.findById(userId,"fname lname email");

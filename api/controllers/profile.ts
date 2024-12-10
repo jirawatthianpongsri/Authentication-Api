@@ -7,7 +7,6 @@ import { encrypt } from "../utils/encrypt";
 import { AuthenticationError } from "../middlewares/error";
 
 dotenv.config({path:"../../.env"});
-
 const ResetPassword = asyncHandler(async(req:Request,res:Response)=>{
     const { password , newPassword } : { password:string , newPassword:string} = req.body;
     const jwtCookie = req.cookies.jwt;
