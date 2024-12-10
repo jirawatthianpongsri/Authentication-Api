@@ -32,3 +32,4 @@ const getMe = asyncHandler(async(req:Request,res:Response)=>{
 })
 
 export { getUser  , getMe };
+

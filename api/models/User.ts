@@ -63,3 +63,4 @@ const userModel = model<IUser>("user",userSchema);
 
 export { IUser };
 export default userModel;
+
